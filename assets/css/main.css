@@ -1,0 +1,304 @@
+/*
+!Fonts
+*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;400;600;700&display=swap");
+/*
+* Helper and Reset scss
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+/*
+* Variables
+*/
+/*
+* Mixins
+*/
+/*
+* Btn
+*/
+.btn, #call-action .btn-dark, #call-action .btn-white, .offer-title .btn-black, .btn-primary {
+  padding: 18px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #1d809f;
+  color: #fff;
+  display: inline-block;
+}
+
+/*
+* Header Start
+*/
+#header {
+  height: 100vh;
+  background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-masthead.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#header h1 {
+  font-size: 5.5rem;
+}
+#header h3 {
+  margin-bottom: 2rem;
+}
+#header h3 em {
+  font-size: 1.75rem;
+}
+
+/*
+* Header End
+*/
+/*
+* Offer Title Start
+*/
+.offer-title {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  text-align: center;
+}
+.offer-title h2 {
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+.offer-title p {
+  margin-bottom: 2.4rem;
+  font-size: 20px;
+}
+.offer-title .btn-black {
+  background-color: #212529;
+  color: #fff;
+  display: inline-block;
+}
+
+/*
+* Offer Title End
+*/
+/*
+* Services Start
+*/
+#services {
+  background-color: #1d809f;
+  padding: 7rem 0;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.section-title h3 {
+  font-size: 16px;
+  color: #ecb807;
+}
+.section-title h2 {
+  font-size: 48px;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon {
+  background-color: #fff;
+  color: #1d809f;
+  height: 7rem;
+  width: 7rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.25rem;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.icon i {
+  font-size: 1.8rem;
+}
+
+.card {
+  text-align: center;
+  color: #fff;
+}
+.card h4 {
+  font-size: 24px;
+  padding: 6px 0;
+}
+
+/*
+* Services End
+*/
+/*
+* Callout Start
+*/
+#callout {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-callout.jpg);
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#callout h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  display: block;
+  max-width: 30rem;
+}
+
+/*
+* Callout End
+*/
+/*
+* Portfolio Start
+*/
+#portfolio {
+  padding: 5rem 0;
+}
+#portfolio .img {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+}
+#portfolio h2 {
+  color: #000;
+}
+#portfolio .box {
+  position: relative;
+  color: #fff;
+}
+#portfolio .box .item-content {
+  position: absolute;
+  bottom: 35px;
+  left: 30px;
+}
+#portfolio .grid {
+  display: grid;
+  grid-template-areas: "staniory ice" "strawberries workspace";
+}
+#portfolio .grid-item-staniory {
+  grid-area: staniory;
+}
+
+.grid-item-ice {
+  grid-area: ice;
+}
+
+.grid-item-strawberries {
+  grid-area: strawberries;
+}
+
+.grid-item-workspace {
+  grid-area: workspace;
+}
+
+/*
+* Portfolio End
+*/
+/*
+* Call Action Start
+*/
+#call-action {
+  padding: 7rem 0;
+  background-color: #1d809f;
+  text-align: center;
+}
+#call-action h2 {
+  margin-bottom: 1.8rem;
+  color: #fff;
+  font-size: 2rem;
+}
+#call-action .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#call-action .btn-white {
+  background-color: #fff;
+  padding: 15px 20px;
+  color: #000;
+}
+#call-action .btn-dark {
+  background-color: #212529;
+  padding: 15px 20px;
+  color: #fff;
+}
+
+/*
+* Call Action End
+*/
+#map iframe {
+  width: 100%;
+}
+
+#footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+#footer .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#footer .social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #1d809f;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 25px;
+}
+#footer .copyright {
+  text-align: center;
+  color: #000;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  #services .row {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  #portfolio .grid {
+    display: grid;
+    grid-template-areas: "staniory" "ice" "strawberries" "workspace";
+  }
+}/*# sourceMappingURL=main.css.map */
